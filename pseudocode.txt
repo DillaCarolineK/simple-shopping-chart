@@ -1,0 +1,49 @@
+Shopping Cart sederhana (menambahkan barang ke shopping cart dan calculate jumlah barang)
+
+Proses selesai saat user berhasil memasukkan barang ke keranjang dan sistem melakukan kalkulasi jumlah barang yang ditambahkan ke keranjang dengan harga barang (Tidak sampai pada proses checkout barang)
+
+1. User membuka halaman awal toko online
+2. User melakukan pencarian produk
+3. User memilih produk
+4. Apakah user memasukkan product ke keranjang?
+5. Jika tidak maka kembali ke bagian memilih produk
+6. Jika iya makan tambahkan total produk yang ingin dibeli 
+7. User ke halaman keranjang
+8. User melakukan checklist produk di keranjang 
+9. Sistem melakukan Kalkulasi perkalian harga produk dengan total produk yang ingin dibeli sebagai total harga
+10. Tampilkan total harga
+11. Apakah user ingin melanjutkan belanja?
+12. Jika iya maka user akan kembali ke halaman awal toko online
+13. Jika tidak maka proses selesai (End)
+
+
+PSEUDOCODE :
+
+Program ShoppingCard
+START
+READ INPUT "User open shop page"
+READ INPUT "User browse product"
+READ INPUT "User choosen product"
+WRITE "Add to cart" = FALSE
+WHILE "Add to cart" == FALSE
+	READ INPUT "Cart"
+	IF "Cart" == SUCCESS
+		SET "Add to cart" = TRUE
+		READ INPUT "Total Product"
+		GOTO "Total Product"
+	ELSE
+		GOTO "User choose product"
+READ INPUT "Continue to cart page"
+READ INPUT "Checklist product"
+STORE "Total price" CALCULATE "User choosen" multiple wirh "Total Product"
+PRINT "Total price"
+WRITE "Continue shopping" = FALSE
+WHILE "Continue shopping" == FALSE
+	READ INPUT "Cont"
+	IF "Cont" == SUCCESS
+		SET "Continue shopping" = TRUE
+		GOTO "User open shop page"
+	ELSE
+		PRINT "Proses selesai"
+END
+	
